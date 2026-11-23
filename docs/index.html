@@ -24,8 +24,8 @@
 
 <section>
   <div class="container">
-    <h2>One Ecosystem. Three Instruments.</h2>
-    <p>ChameleonTools is a collection of professional audio and music tools built with FreePascal and Lazarus. Each tool stands on its own, but together they form a complete workflow for musicians, audio engineers, and producers — from songwriting and sound design to mixing, mastering, and instrument setup.</p>
+    <h2>One Ecosystem. Four Instruments.</h2>
+    <p>ChameleonTools is a collection of professional audio and music tools — desktop apps built with FreePascal and Lazarus, and a headless recorder OS for Raspberry Pi. Each tool stands on its own, but together they form a complete workflow for musicians, audio engineers, and producers — from songwriting and sound design to mixing, mastering, and instrument setup.</p>
     <p>Every tool is <strong>free, open-source, and cross-platform</strong> (Windows, macOS, Linux). No subscriptions, no dongles, no vendor lock-in. Download, use, modify, and contribute.</p>
 
     <div class="tool-grid">
@@ -96,6 +96,30 @@
         </div>
       </div>
 
+
+      <div class="tool-card">
+        <span class="tool-tag">HEADLESS RECORDING</span>
+        <h3>ChameleonRecorder</h3>
+        <p>A headless, plug-and-play multitrack WAV recorder OS for the Raspberry Pi 4 (64-bit). It automatically detects any class-compliant USB audio interface, records uncompressed 24-bit multitrack WAV files directly to a USB flash drive, and provides a mobile-friendly web remote control with live level meters.</p>
+        <p><strong>Who it's for:</strong> Live sound engineers, rehearsal studios, and musicians who need to record multitrack audio without a laptop. Also useful for installation recording, choir/orchestra capture, and any situation where a dedicated, silent, low-power recorder is preferred over a computer.</p>
+        <p><strong>What makes it different:</strong> No laptop. No DAW. No drivers. Just a Raspberry Pi, a USB audio interface, and a USB stick. Power on and record. It includes an automatic fallback Wi-Fi hotspot (SSID: ChameleonRecorder) so it works even without a router — connect your phone and control everything from the browser. It supports multi-device recording (multiple USB interfaces simultaneously), ADAT clock sync for sample-accurate multi-unit setups, and optional GPIO pushbuttons for physical Record/Stop control.</p>
+        <ul>
+          <li>Universal USB audio support (Behringer, MOTU, Focusrite, RME, Zoom, etc.)</li>
+          <li>Multi-device recording with automatic ADAT clock sync</li>
+          <li>Web remote on port :8080 (per-device & per-channel arming, live meters)</li>
+          <li>Fallback Wi-Fi hotspot (no router needed)</li>
+          <li>24-bit/48kHz WAV recording directly to USB flash drive</li>
+          <li>GPIO pushbuttons + status LED (optional)</li>
+          <li>File management: delete, download, ZIP archive</li>
+          <li>SSH access for advanced users</li>
+        </ul>
+        <div class="tool-links">
+          <a href="https://github.com/smallbutfine/ChameleonRecorder">GitHub</a>
+          <a href="https://smallbutfine.github.io/ChameleonRecorder/">Docs</a>
+          <a href="https://github.com/smallbutfine/ChameleonRecorder/releases">Releases</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -127,8 +151,12 @@
         <p><strong>ChameleonDrummer</strong> creates human-feeling drum tracks in 37 styles. <strong>TaraDSP</strong> adds cabinet simulation, reverb, and mastering. The complete production chain.</p>
       </div>
       <div class="audience-card">
+        <h4>Live Sound & Rehearsal Studios</h4>
+        <p><strong>ChameleonRecorder</strong> turns a Raspberry Pi into a dedicated multitrack recorder. Plug in your USB mixer, insert a USB stick, and record every channel directly — no laptop, no DAW, no driver issues.</p>
+      </div>
+      <div class="audience-card">
         <h4>FreePascal / Lazarus Developers</h4>
-        <p>All tools are built with FreePascal and Lazarus. The <a href="https://github.com/smallbutfine/fpc-lazarus-multiplatform-template">multi-platform template</a> provides a ready-to-use build system with CI/CD, cross-compilation, and packaging.</p>
+        <p>The desktop tools are built with FreePascal and Lazarus. ChameleonRecorder runs on Raspberry Pi OS (Linux) using JACK, jack_capture, and Python. The <a href="https://github.com/smallbutfine/fpc-lazarus-multiplatform-template">multi-platform template</a> provides a ready-to-use build system with CI/CD, cross-compilation, and packaging.</p>
       </div>
     </div>
   </div>
@@ -207,6 +235,7 @@
       <a href="https://github.com/smallbutfine/ChameleonDrummer">ChameleonDrummer</a> ·
       <a href="https://github.com/smallbutfine/TaraDSP">TaraDSP</a> ·
       <a href="https://github.com/smallbutfine/stringselectorapp">StringSelectorApp</a> ·
+      <a href="https://github.com/smallbutfine/ChameleonRecorder">ChameleonRecorder</a> ·
       <a href="https://github.com/smallbutfine/fpc-lazarus-multiplatform-template">Template</a>
     </p>
   </div>
