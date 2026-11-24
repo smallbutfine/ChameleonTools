@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChameleonTools — Kostenlose und Open-Source-Werkzeuge für Musiker, Tontechniker & Produzenten</title>
+<link rel="stylesheet" href="../style.css">
+  <style>
+.crossbar {
+  background: #0d1117;
+  border-bottom: 1px solid #30363d;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 0.85em;
+  letter-spacing: 0.5px;
+}
+.crossbar a {
+  color: #8b949e;
+  text-decoration: none;
+  padding: 4px 10px;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+.crossbar a:hover {
+  color: #58a6ff;
+}
+.crossbar-sep {
+  color: #30363d;
+  margin: 0 6px;
+}
+</style>
+</head>
+<body>
+<div class="crossbar">
+  <a href="https://smallbutfine.github.io/ChameleonTools/">ChameleonTools</a>
+  <span class="crossbar-sep">|</span>
+  <a href="https://smallbutfine.github.io/ChameleonDrummer/">Drummer</a>
+  <span class="crossbar-sep">|</span>
+  <a href="https://smallbutfine.github.io/TaraDSP/">TaraDSP</a>
+  <span class="crossbar-sep">|</span>
+  <a href="https://smallbutfine.github.io/stringselectorapp/">StringSelector</a>
+  <span class="crossbar-sep">|</span>
+  <a href="https://smallbutfine.github.io/ChameleonRecorder/">Recorder</a>
+</div>
+
+
+<header>
+  <div class="container">
+    <h1>CHAMELEON<span class="accent">TOOLS</span></h1>
+    <p class="subtitle">Kostenlose und Open-Source-Werkzeuge für Musiker, Tontechniker und Produzenten</p>
+    <p class="tagline">Entwickelt mit FreePascal und Lazarus. Plattformübergreifend. Keine Abhängigkeiten. Kein Lock-in.</p>
+    <nav>
+      <a href="#tools">Die Werkzeuge</a>
+      <a href="#audience">Für wen</a>
+      <a href="#opensource">Open Source</a>
+      <a href="#build">Build-System</a>
+      <a href="https://smallbutfine.github.io/ChameleonTools/de/">DE</a>
+      <a href="https://smallbutfine.github.io/ChameleonTools/es/">ES</a>
+      <a href="https://smallbutfine.github.io/ChameleonTools/fr/">FR</a>
+      <a href="https://smallbutfine.github.io/ChameleonTools/pt/">PT</a>
+      <a href="https://smallbutfine.github.io/ChameleonTools/ru/">RU</a>
+      <a href="https://smallbutfine.github.io/ChameleonTools/zh/">ZH</a>
+    </nav>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h2>Ein Ökosystem. Vier Instrumente.</h2>
+    <p>ChameleonTools ist eine Sammlung professioneller Audio- und Musikwerkzeuge — Desktop-Anwendungen, entwickelt mit FreePascal und Lazarus, sowie ein headless aufnehmendes OS für Raspberry Pi. Jedes Werkzeug steht für sich allein, aber zusammen bilden sie einen vollständigen Workflow für Musiker, Tontechniker und Produzenten — vom Songwriting und Sounddesign bis hin zu Mixing, Mastering und Instrumenteneinrichtung.</p>
+    <p>Jedes Werkzeug ist <strong>kostenlos, Open Source und plattformübergreifend</strong> (Windows, macOS, Linux). Keine Abonnements, keine Dongles, kein Vendor-Lock-in. Herunterladen, verwenden, modifizieren und beitragen.</p>
+
+    <div class="tool-grid">
+
+      <div class="tool-card">
+        <span class="tool-tag">MIDI-GENERIERUNG</span>
+        <h3>ChameleonDrummer</h3>
+        <p>Ein dynamischer MIDI-Schlagzeug-Generator, der ein Genre, einen Stil, einen Drummer und ein Metrum in eine realistische, menschlich wirkende Schlagzeugspur verwandelt. Er exportiert MIDI-Dateien, die Sie in jede DAW, Schlagzeug-Software oder Notenprogramm importieren können.</p>
+        <p><strong>Für wen es ist:</strong> Songwriter, Produzenten und Komponisten, die realistische Schlagzeugspuren ohne Drummer oder ein vollständiges Schlagzeug-Set benötigen. Ebenfalls nützlich zum Generieren von Ideen, Skizzieren von Arrangements und Erstellen von Backing-Tracks.</p>
+        <p><strong>Was es anders macht:</strong> Es looppt nicht nur Samples — es modelliert Drummer-Stile (Bonham, Porcaro, Chambers, Roeder, Dee, Hoglan und 10 weitere), wendet Humanisierung an (Timing-Jitter, Ghost Notes, Swing) und respektiert physikalische Spielbarkeitsgrenzen. Das Ergebnis klingt wie ein echter Drummer, nicht wie eine Maschine.</p>
+        <ul>
+          <li>5 Genres, 37 Stile, 17 Drummer-Profile</li>
+          <li>Multi-Keymap-Unterstützung (GM, AD2, EZDrummer 3, Yamaha XG, benutzerdefiniertes JSON)</li>
+          <li>Mehrfach- und ungerade Metrums (5/4, 7/8, 9/8, 11/8, 13/8, bis zu 32/16)</li>
+          <li>Triplet-Feel, Swing und Humanisierung</li>
+          <li>REAPER- und Ardour-Session-Export</li>
+          <li>CLI für Batch-Generierung, GUI für interaktive Nutzung</li>
+        </ul>
+        <div class="tool-links">
+          <a href="https://github.com/smallbutfine/ChameleonDrummer">GitHub</a>
+          <a href="https://smallbutfine.github.io/ChameleonDrummer/">Doku</a>
+          <a href="https://github.com/smallbutfine/ChameleonDrummer/releases">Releases</a>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <span class="tool-tag">AUDIO-FALTUNG & MASTERING</span>
+        <h3>TaraDSP</h3>
+        <p>Ein professioneller FFT-basierter Faltungsprozessor für Cabinet-Simulation, Faltungshall und Mastering-Grade-Audioprozessierung. Er wendet Impulsantworten auf Audiosignale in Studioqualität an.</p>
+        <p><strong>Für wen es ist:</strong> Gitarristen und Bassisten, die Cabinet-Simulation wünschen, Tontechniker, die Faltungshall benötigen, und Mastering-Ingenieure, die TPDF-Dithering, Minimalphasen-Konvertierung und hochqualitatives Resampling benötigen.</p>
+        <p><strong>Was es anders macht:</strong> Es verwendet die PFFFT-Bibliothek (Pretty Fast FFT) für Real-FFT-Faltung — doppelt so schnell wie komplexe FFT für reale Audiosignale. Es beinhaltet Mastering-Grade-TPDF-Dithering mit Fehler-Rückkopplung, Minimalphasen-Konvertierung (entfernt Pre-Ringing) und Multi-Engine-Resampling (SoX, R8Brain, FinalCD, linearer Fallback). Es kann auch zwei IRs zu einem neuen kombinieren — zwei Cabinets mischen, EQ in ein Cab einbrennen oder ein Cab mit einem Raum verschmelzen.</p>
+        <ul>
+          <li>FFT-Faltung mit PFFFT (SIMD-beschleunigt)</li>
+          <li>TPDF-Dithering mit Fehler-Rückkopplung (16-Bit)</li>
+          <li>Minimalphasen-Konvertierung (kein Pre-Ringing)</li>
+          <li>Multi-Engine-Resampling (SoX / R8Brain / FinalCD / linear)</li>
+          <li>IR-Kombination (zwei Impulsantworten zusammenführen)</li>
+          <li>Fades, Stille-Beschneidung, Normalisierung, Kürzung</li>
+          <li>CLI für Batch-Verarbeitung, GUI für interaktive Nutzung</li>
+        </ul>
+        <div class="tool-links">
+          <a href="https://github.com/smallbutfine/TaraDSP">GitHub</a>
+          <a href="https://smallbutfine.github.io/TaraDSP/">Doku</a>
+          <a href="https://github.com/smallbutfine/TaraDSP/releases">Releases</a>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <span class="tool-tag">INSTRUMENTENEINRICHTUNG</span>
+        <h3>StringSelectorApp</h3>
+        <p>Ein Saitenspannungsrechner für Gitarren und Bässe. Er berechnet die exakte Spannung jeder Saite basierend auf Stärke, Einheitsgewicht, Stimmung und Mensur — und generiert druckbare Werkstatt-Berichte.</p>
+        <p><strong>Für wen es ist:</strong> Gitarrentechniker, Geigenbauer, Bassisten und alle, die die richtigen Saiten für eine Stimmung auswählen, ein Multiskalen-Instrument einrichten oder die Spannung vor einer Trussrod-Einstellung überprüfen müssen.</p>
+        <p><strong>Was es anders macht:</strong> Es verwendet das <em>Einheitsgewicht</em> (nicht nur die Stärke) für eine genaue Spannungsberechnung — zwei .010"-Saiten verschiedener Marken können 20 % unterschiedliche Spannung haben. Es beinhaltet eine visuelle Spannungskurve, einen Trussrod-Einstellungsassistenten (geschätzte Umdrehungen basierend auf Spannungsdifferenz) und druckbare HTML-Werkstatt-Berichte. Es unterstützt 4–9 Saiten-Instrumente und Multiskalen-(Fanned-Fret-)Mensuren.</p>
+        <ul>
+          <li>37 Saiten-Packs (Ernie Ball, D'Addario, Elixir und mehr)</li>
+          <li>28 Stimmungs-Presets (Standard, Drop, Open, benutzerdefiniert)</li>
+          <li>Echtzeit-Visualisierung der Spannungskurve</li>
+          <li>Trussrod-Einstellungsassistent (geschätzte Umdrehungen)</li>
+          <li>Druckbare HTML-Werkstatt-Berichte</li>
+          <li>CSV-Export, benutzerdefinierte Stimmung speichern, transponieren/Pitch</li>
+          <li>ISO-Einheiten-Umschaltung (lbs / kg / N)</li>
+          <li>Multiskalen-Unterstützung (Treble- + Bass-Mensur)</li>
+        </ul>
+        <div class="tool-links">
+          <a href="https://github.com/smallbutfine/stringselectorapp">GitHub</a>
+          <a href="https://smallbutfine.github.io/stringselectorapp/">Doku</a>
+          <a href="https://github.com/smallbutfine/stringselectorapp/releases">Releases</a>
+        </div>
+      </div>
+
+
+      <div class="tool-card">
+        <span class="tool-tag">HEADLESS-AUFNAHME</span>
+        <h3>ChameleonRecorder</h3>
+        <p>Ein headless, plug-and-play Multitrack-WAV-Recorder-OS für den Raspberry Pi 4 (64-Bit). Es erkennt automatisch jedes klassenkonforme USB-Audio-Interface, nimmt unkomprimierte 24-Bit-Multitrack-WAV-Dateien direkt auf einen USB-Stick auf und bietet eine mobilfreundliche Web-Fernbedienung mit Live-Pegelanzeigen.</p>
+        <p><strong>Für wen es ist:</strong> Live-Tontechniker, Proberaumsstudios und Musiker, die Multitrack-Audio ohne Laptop aufnehmen müssen. Ebenfalls nützlich für Installationsaufnahmen, Chor-/Orchesteraufnahmen und jede Situation, in der ein dedizierter, leiser, stromsparender Recorder einem Computer vorgezogen wird.</p>
+        <p><strong>Was es anders macht:</strong> Kein Laptop. Keine DAW. Keine Treiber. Nur ein Raspberry Pi, ein USB-Audio-Interface und ein USB-Stick. Einschalten und aufnehmen. Es beinhaltet einen automatischen Fallback-Wi-Fi-Hotspot (SSID: ChameleonRecorder), sodass es auch ohne Router funktioniert — verbinden Sie Ihr Telefon und steuern Sie alles über den Browser. Es unterstützt Multi-Device-Aufnahme (mehrere USB-Interfaces gleichzeitig), ADAT-Clock-Sync für sample-genaue Multi-Unit-Setups und optionale GPIO-Drucktaster für physische Record/Stop-Steuerung.</p>
+        <ul>
+          <li>Universelle USB-Audio-Unterstützung (Behringer, MOTU, Focusrite, RME, Zoom usw.)</li>
+          <li>Multi-Device-Aufnahme mit automatischem ADAT-Clock-Sync</li>
+          <li>Web-Fernbedienung auf Port :8080 (geräte- & kanalweises Scharfschalten, Live-Pegel)</li>
+          <li>Fallback-Wi-Fi-Hotspot (kein Router erforderlich)</li>
+          <li>24-Bit/48kHz-WAV-Aufnahme direkt auf USB-Stick</li>
+          <li>GPIO-Drucktaster + Status-LED (optional)</li>
+          <li>Dateiverwaltung: löschen, herunterladen, ZIP-Archiv</li>
+          <li>SSH-Zugriff für fortgeschrittene Benutzer</li>
+        </ul>
+        <div class="tool-links">
+          <a href="https://github.com/smallbutfine/ChameleonRecorder">GitHub</a>
+          <a href="https://smallbutfine.github.io/ChameleonRecorder/">Doku</a>
+          <a href="https://github.com/smallbutfine/ChameleonRecorder/releases">Releases</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="audience">
+  <div class="container">
+    <h2>Für wen</h2>
+    <p>ChameleonTools wurde für Menschen entwickelt, die mit Klang arbeiten — ob Sie Songs schreiben, Platten aufnehmen, Audio mastern oder Instrumente einrichten. Hier ist, wer von jedem Werkzeug profitiert:</p>
+
+    <div class="audience-grid">
+      <div class="audience-card">
+        <h4>Songwriter & Komponisten</h4>
+        <p><strong>ChameleonDrummer</strong> generiert realistische MIDI-Schlagzeugspuren in jedem Genre oder Stil. Arrangements skizzieren, Backing-Tracks erstellen und in Ihre DAW exportieren. Kein Drummer erforderlich.</p>
+      </div>
+      <div class="audience-card">
+        <h4>Gitarristen & Bassisten</h4>
+        <p><strong>TaraDSP</strong> simuliert Cabinets und Effekte mit FFT-Faltung. <strong>StringSelectorApp</strong> hilft Ihnen, die richtigen Saiten für Ihre Stimmung und Mensur auszuwählen.</p>
+      </div>
+      <div class="audience-card">
+        <h4>Audio- & Mastering-Ingenieure</h4>
+        <p><strong>TaraDSP</strong> bietet TPDF-Dithering, Minimalphasen-Konvertierung, hochqualitatives Resampling und Faltungshall — alles in einem schlanken, skriptierbaren CLI-Werkzeug.</p>
+      </div>
+      <div class="audience-card">
+        <h4>Gitarrentechniker & Geigenbauer</h4>
+        <p><strong>StringSelectorApp</strong> berechnet Saitenspannung, generiert Werkstatt-Berichte und schätzt Trussrod-Einstellungen. Der professionelle Begleiter für die Saitenauswahl.</p>
+      </div>
+      <div class="audience-card">
+        <h4>Produzenten & Beatmaker</h4>
+        <p><strong>ChameleonDrummer</strong> erstellt menschlich wirkende Schlagzeugspuren in 37 Stilen. <strong>TaraDSP</strong> fügt Cabinet-Simulation, Hall und Mastering hinzu. Die komplette Produktionskette.</p>
+      </div>
+      <div class="audience-card">
+        <h4>Live-Sound & Proberaumsstudios</h4>
+        <p><strong>ChameleonRecorder</strong> verwandelt einen Raspberry Pi in einen dedizierten Multitrack-Recorder. USB-Mixer anschließen, USB-Stick einstecken und jeden Kanal direkt aufnehmen — kein Laptop, keine DAW, keine Treiberprobleme.</p>
+      </div>
+      <div class="audience-card">
+        <h4>FreePascal / Lazarus Entwickler</h4>
+        <p>Die Desktop-Werkzeuge wurden mit FreePascal und Lazarus entwickelt. ChameleonRecorder läuft auf Raspberry Pi OS (Linux) unter Verwendung von JACK, jack_capture und Python. Die <a href="https://github.com/smallbutfine/fpc-lazarus-multiplatform-template">Multi-Plattform-Vorlage</a> bietet ein sofort einsatzbereites Build-System mit CI/CD, Cross-Compilation und Packaging.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="opensource">
+  <div class="container">
+    <h2>Open Source. Offene Möglichkeiten.</h2>
+    <p>Jedes ChameleonTools-Projekt ist <strong>kostenlos und Open Source</strong>. Dies ist keine Marketing-Entscheidung — es ist ein grundlegendes Prinzip. Musikwerkzeuge sollten für jeden zugänglich sein, unabhängig vom Budget. Und der beste Weg, großartige Werkzeuge zu entwickeln, ist, der Community zu erlauben, sie zu nutzen, zu modifizieren und zu verbessern.</p>
+
+    <h3>Was "Open Source" hier bedeutet</h3>
+    <table>
+      <thead><tr><th>Freiheit</th><th>Was es für Sie bedeutet</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Nutzen</strong></td><td>Herunterladen, installieren und jedes Werkzeug kostenlos verwenden. Keine Abonnements, keine Testversionen, keine Funktionslimits.</td></tr>
+        <tr><td><strong>Studieren</strong></td><td>Den Quellcode lesen. Verstehen, wie die DSP, MIDI-Generierung oder Spannungsberechnung funktioniert. Daraus lernen.</td></tr>
+        <tr><td><strong>Modifizieren</strong></td><td>Alles ändern. Funktionen hinzufügen, Fehler beheben, an Ihren Workflow anpassen. Der Quellcode ist direkt da.</td></tr>
+        <tr><td><strong>Teilen</strong></td><td>Ihre modifizierte Version weitergeben. Mit Freunden, Kunden oder der Community teilen.</td></tr>
+        <tr><td><strong>Beitragen</strong></td><td>Das Repo forken, Verbesserungen vornehmen und einen Pull Request einreichen. Jeder Beitrag macht die Werkzeuge für alle besser.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Kein Vendor-Lock-in</h3>
+    <p>Da die Werkzeuge Open Source sind und Standard-Dateiformate (WAV, MIDI, JSON, INI) verwenden, gibt es keinen Lock-in. Ihre Daten gehören Ihnen. Ihr Workflow gehört Ihnen. Wenn Sie sich entscheiden, zu einem anderen Werkzeug zu wechseln, funktionieren Ihre Dateien weiterhin.</p>
+
+    <h3>Für Forks entwickelt</h3>
+    <p>Jedes Werkzeug wurde als Ausgangspunkt entwickelt, nicht als fertiges Produkt. Forken Sie es, ändern Sie es, machen Sie es zu Ihrem eigenen. Die <a href="https://github.com/smallbutfine/fpc-lazarus-multiplatform-template">Projektvorlage</a> gibt Ihnen dasselbe Multi-Plattform-Build-System, denselben CI-Workflow und dasselbe Packaging, die diese Werkzeuge verwenden — sodass Ihr Fork genauso bauen und veröffentlichen kann wie die Originale.</p>
+
+    <h3>Community-getrieben</h3>
+    <p>Fehlerberichte, Funktionswünsche und Pull Requests sind in jedem Projekt willkommen. Die Werkzeuge werden von einem Entwickler entwickelt, der sie täglich nutzt, aber das Feedback der Community prägt ihre Richtung. Wenn etwas für Sie nicht funktioniert, öffnen Sie ein Issue — es wird überprüft.</p>
+
+    <div class="note">
+      <strong>Alle Werkzeuge teilen sich dasselbe Build-System:</strong> FreePascal + Lazarus + ein Multi-Plattform-Build-Skript, das Windows-Installer, macOS-App-Bundles und Linux-Tarballs erzeugt — mit einem GitHub-Actions-CI-Workflow, der alles automatisiert. Eine Toolchain, fünf Plattformen, null manuelle Schritte.
+    </div>
+  </div>
+</section>
+
+<section id="build">
+  <div class="container">
+    <h2>Ein Build-System. Jede Plattform.</h2>
+    <p>Alle ChameleonTools-Projekte teilen sich dasselbe Multi-Plattform-Build-System, extrahiert in eine wiederverwendbare <a href="https://github.com/smallbutfine/fpc-lazarus-multiplatform-template">Projektvorlage</a>. Es verwaltet:</p>
+
+    <table>
+      <thead><tr><th>Plattform</th><th>Artefakt</th><th>Packaging</th></tr></thead>
+      <tbody>
+        <tr><td>Windows x86_64</td><td>Installer (`.exe`)</td><td>Inno Setup 6</td></tr>
+        <tr><td>macOS Intel (x86_64)</td><td>App-Bundle (`.app` → `.zip`)</td><td>zip_app.py (Unix-Exec-Bits)</td></tr>
+        <tr><td>macOS Apple Silicon (aarch64)</td><td>App-Bundle (`.app` → `.zip`)</td><td>zip_app.py (Unix-Exec-Bits)</td></tr>
+        <tr><td>Linux x86_64</td><td>Tarball (`.tar.gz`)</td><td>Zwei-Pass-Tar mit Exec-Bits</td></tr>
+        <tr><td>Linux ARM</td><td>Tarball (`.tar.gz`)</td><td>Zwei-Pass-Tar mit Exec-Bits</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Lokal bauen</h3>
+    <pre>./build_all.bat            # alle 5 Ziele + Pakete nach Deploy/
+./build_all.bat --check    # nur die Toolchain überprüfen</pre>
+
+      <h3>In CI bauen</h3>
+    <p>Jedes Projekt beinhaltet einen GitHub-Actions-Workflow, der alle 5 Ziele auf einem Windows-Runner baut. Er installiert FPC + Lazarus + Cross-Compiler über <code>fpcup</code>, lädt das macOS SDK automatisch herunter und führt <code>build_all.bat</code> aus. Lösen Sie ihn manuell über <strong>Actions → CI / Cross-Platform Build → Run workflow</strong> aus.</p>
+
+    <h3>Voraussetzungen</h3>
+    <ul>
+      <li>FreePascal Compiler (FPC) 3.2.2+ oder Lazarus IDE 3.0+</li>
+      <li>FPC-Cross-Compiler (<code>ppcrossx64</code>, <code>ppcrossa64</code>, <code>ppcrossarm</code>) — installiert über <a href="https://github.com/LongDirtyAnimAlf/fpcupdeluxe">fpcupdeluxe</a></li>
+      <li>Inno Setup 6 (für Windows-Installer)</li>
+      <li>Python 3 (für macOS-Bundle-Zipping mit korrekten Unix-Modi)</li>
+      <li>Zig (automatisch heruntergeladen für Linux-C-Cross-Compilation in TaraDSP)</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>ChameleonTools — Kostenlose und Open-Source-Werkzeuge für Musiker, Tontechniker und Produzenten.</p>
+    <p>
+      <a href="https://github.com/smallbutfine/ChameleonDrummer">ChameleonDrummer</a> ·
+      <a href="https://github.com/smallbutfine/TaraDSP">TaraDSP</a> ·
+      <a href="https://github.com/smallbutfine/stringselectorapp">StringSelectorApp</a> ·
+      <a href="https://github.com/smallbutfine/ChameleonRecorder">ChameleonRecorder</a> ·
+      <a href="https://github.com/smallbutfine/fpc-lazarus-multiplatform-template">Vorlage</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
