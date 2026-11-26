@@ -41,6 +41,8 @@
   <a href="https://smallbutfine.github.io/stringselectorapp/">StringSelector</a>
   <span class="crossbar-sep">|</span>
   <a href="https://smallbutfine.github.io/ChameleonRecorder/">Recorder</a>
+  <span class="crossbar-sep">|</span>
+  <a href="https://smallbutfine.github.io/ChameleonSkeleton/">Skeleton</a>
 </div>
 
 
@@ -163,6 +165,25 @@
         </div>
       </div>
 
+      <div class="tool-card">
+        <span class="tool-tag">AUDIO PLUGIN</span>
+        <h3>ChameleonSkeleton</h3>
+        <p>A minimal, multi-format audio plugin skeleton written in FreePascal. CLAP first, VST3 via clap-wrapper, with a bitmap GUI and a passthrough DSP you replace with your own.</p>
+        <p><strong>Who it's for:</strong> FreePascal/Lazarus developers who want to ship a plugin (CLAP/VST3/AUv2) without leaving Pascal for the format/GUI shell.</p>
+        <p><strong>What makes it different:</strong> One CLAP build + clap-wrapper yields VST3 (and AUv2 with the Apple SDK). The DSP stays in Pascal; the C ABI glue handles the formats and the embedded window (Win32/X11/Cocoa).</p>
+        <ul>
+          <li>CLAP + VST3 (Windows/Linux/macOS), AUv2 optional</li>
+          <li>Bitmap GUI (Win32 GDI, X11, Cocoa NSView)</li>
+          <li>clap.params + clap.state (gain + window size)</li>
+          <li>One build_all.bat → dist/ + Deploy/ + Windows VST3</li>
+        </ul>
+        <div class="tool-links">
+          <a href="https://github.com/smallbutfine/ChameleonSkeleton">GitHub</a>
+          <a href="https://smallbutfine.github.io/ChameleonSkeleton/">Docs</a>
+          <a href="https://github.com/smallbutfine/ChameleonSkeleton/releases">Releases</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -279,6 +300,7 @@
       <a href="https://github.com/smallbutfine/TaraDSP">TaraDSP</a> Â·
       <a href="https://github.com/smallbutfine/stringselectorapp">StringSelectorApp</a> Â·
       <a href="https://github.com/smallbutfine/ChameleonRecorder">ChameleonRecorder</a> Â·
+      <a href="https://github.com/smallbutfine/ChameleonSkeleton">ChameleonSkeleton</a> Â·
       <a href="https://github.com/smallbutfine/fpc-lazarus-multiplatform-template">Template</a>
     </p>
   </div>
