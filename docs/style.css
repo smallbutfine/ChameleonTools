@@ -12,8 +12,8 @@ body {
   color: #e0e0e0;
   background-color: #0a0a0a;
   background-image:
-    linear-gradient(rgba(0, 200, 150, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 200, 150, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(255, 213, 79, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 213, 79, 0.03) 1px, transparent 1px);
   background-size: 40px 40px;
   position: relative;
 }
@@ -25,7 +25,7 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at center, rgba(0, 200, 150, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle at center, rgba(255, 213, 79, 0.08) 0%, transparent 70%);
   pointer-events: none;
   z-index: -1;
 }
@@ -39,28 +39,28 @@ body::before {
 }
 
 header {
-  background: linear-gradient(135deg, #0a2a1a 0%, #1a1a2e 100%);
-  color: #00c896;
+  background: linear-gradient(135deg, #2a2a0a 0%, #1a1a2e 100%);
+  color: #ffd54f;
   padding: 40px 0;
-  border-bottom: 2px solid #00c896;
-  box-shadow: 0 4px 20px rgba(0, 200, 150, 0.3);
+  border-bottom: 2px solid #ffd54f;
+  box-shadow: 0 4px 20px rgba(255, 213, 79, 0.3);
 }
 
 header h1 {
   margin-bottom: 10px;
   font-size: 3em;
   font-weight: bold;
-  text-shadow: 0 0 20px rgba(0, 200, 150, 0.8);
+  text-shadow: 0 0 20px rgba(255, 213, 79, 0.8);
   letter-spacing: 3px;
 }
 
 header .accent {
-  color: #44ddaa;
+  color: #ffe082;
 }
 
 header .subtitle {
   font-size: 1.2em;
-  color: #00aa77;
+  color: #b8860b;
   margin-bottom: 20px;
   font-style: italic;
 }
@@ -79,10 +79,10 @@ nav {
 }
 
 nav a {
-  color: #00c896;
+  color: #ffd54f;
   text-decoration: none;
   padding: 10px 20px;
-  border: 1px solid #00c896;
+  border: 1px solid #ffd54f;
   border-radius: 0;
   transition: all 0.3s;
   text-transform: uppercase;
@@ -90,8 +90,8 @@ nav a {
 }
 
 nav a:hover {
-  background: rgba(0, 200, 150, 0.2);
-  box-shadow: 0 0 10px rgba(0, 200, 150, 0.5);
+  background: rgba(255, 213, 79, 0.2);
+  box-shadow: 0 0 10px rgba(255, 213, 79, 0.5);
 }
 
 section {
@@ -99,22 +99,22 @@ section {
 }
 
 h2 {
-  color: #00c896;
+  color: #ffd54f;
   font-size: 2em;
   margin-bottom: 20px;
-  border-bottom: 1px solid #00c896;
+  border-bottom: 1px solid #ffd54f;
   padding-bottom: 10px;
 }
 
 h3 {
-  color: #44ddaa;
+  color: #ffe082;
   font-size: 1.4em;
   margin-top: 25px;
   margin-bottom: 15px;
 }
 
 h4 {
-  color: #00aa77;
+  color: #b8860b;
   font-size: 1.1em;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -132,13 +132,13 @@ code, pre {
 code {
   padding: 0.2em 0.4em;
   font-size: 90%;
-  color: #44ddaa;
+  color: #ffe082;
 }
 
 pre {
   padding: 1em;
   overflow-x: auto;
-  border-left: 3px solid #00c896;
+  border-left: 3px solid #ffd54f;
   font-size: 0.9em;
 }
 
@@ -155,18 +155,18 @@ th, td {
 }
 
 th {
-  background: #0a2a1a;
-  color: #00c896;
+  background: #2a2a0a;
+  color: #ffd54f;
   font-weight: bold;
 }
 
 tr:nth-child(even) {
-  background: rgba(0, 200, 150, 0.03);
+  background: rgba(255, 213, 79, 0.03);
 }
 
 .note {
-  background: rgba(0, 200, 150, 0.1);
-  border-left: 4px solid #00c896;
+  background: rgba(255, 213, 79, 0.1);
+  border-left: 4px solid #ffd54f;
   padding: 0.8em 1em;
   margin: 1em 0;
 }
@@ -188,14 +188,14 @@ tr:nth-child(even) {
 .tool-card {
   background: #1a1a1a;
   border: 1px solid #333;
-  border-top: 4px solid #00c896;
+  border-top: 4px solid #ffd54f;
   padding: 25px;
   transition: all 0.3s;
 }
 
 .tool-card:hover {
-  border-color: #00c896;
-  box-shadow: 0 0 20px rgba(0, 200, 150, 0.3);
+  border-color: #ffd54f;
+  box-shadow: 0 0 20px rgba(255, 213, 79, 0.3);
   transform: translateY(-3px);
 }
 
@@ -206,12 +206,12 @@ tr:nth-child(even) {
 
 .tool-card .tool-tag {
   display: inline-block;
-  background: #0a2a1a;
-  color: #00c896;
+  background: #2a2a0a;
+  color: #ffd54f;
   padding: 3px 10px;
   font-size: 0.8em;
   margin-bottom: 15px;
-  border: 1px solid #00c896;
+  border: 1px solid #ffd54f;
 }
 
 .tool-card .tool-links {
@@ -222,16 +222,16 @@ tr:nth-child(even) {
 }
 
 .tool-card .tool-links a {
-  color: #00c896;
+  color: #ffd54f;
   text-decoration: none;
   padding: 5px 15px;
-  border: 1px solid #00c896;
+  border: 1px solid #ffd54f;
   transition: all 0.3s;
   font-size: 0.9em;
 }
 
 .tool-card .tool-links a:hover {
-  background: rgba(0, 200, 150, 0.2);
+  background: rgba(255, 213, 79, 0.2);
 }
 
 .audience-grid {
@@ -244,7 +244,7 @@ tr:nth-child(even) {
 .audience-card {
   background: #1a1a1a;
   border: 1px solid #333;
-  border-left: 3px solid #44ddaa;
+  border-left: 3px solid #ffe082;
   padding: 20px;
 }
 
@@ -253,24 +253,24 @@ tr:nth-child(even) {
 }
 
 footer {
-  background: #0a2a1a;
-  color: #00aa77;
+  background: #2a2a0a;
+  color: #b8860b;
   text-align: center;
   padding: 30px 0;
-  border-top: 1px solid #00c896;
+  border-top: 1px solid #ffd54f;
   margin-top: 40px;
 }
 
 footer a {
-  color: #00c896;
+  color: #ffd54f;
   text-decoration: none;
 }
 
 blockquote {
-  border-left: 3px solid #00c896;
+  border-left: 3px solid #ffd54f;
   margin: 15px 0;
   padding: 10px 20px;
-  background: rgba(0, 200, 150, 0.05);
+  background: rgba(255, 213, 79, 0.05);
   color: #ccc;
   font-style: italic;
 }
