@@ -172,8 +172,8 @@ tr:nth-child(even) {
 }
 
 .warning {
-  background: rgba(255, 100, 50, 0.1);
-  border-left: 4px solid #ff6432;
+  background: rgba(255, 213, 79, 0.1);
+  border-left: 4px solid #ffd54f;
   padding: 0.8em 1em;
   margin: 1em 0;
 }
